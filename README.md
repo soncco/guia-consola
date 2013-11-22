@@ -138,7 +138,7 @@ Donde:
   $ cd /
   ```
 
- * #### Copiar, mover, renombrar, borrar
+#### Copiar, mover, renombrar, borrar
 
   ```bash
   # Copiar directorio
