@@ -104,3 +104,19 @@ Olvidémonos de C:, D:, E:, etc :)
   **[[ Volver al índice ]](#INDEX)**
 
   - ### <a name="comandos">Comandos básicos</a>
+
+   * #### Creación de archivos y directorios 
+
+   ```bash
+   # Creamos el archivo index.html
+   $ touch index.html
+
+   # Creamos el directorio logs
+   $ mkdir logs
+
+   # Creamos varios directorios
+   $ mkdir media templates
+
+   # Creamos directorios dentro de directorios, aunque no existan
+   $ mkdir -p public/{images,css,js} # Crea el archivo public y dentro de este la carpeta images, css y js
+   ```
