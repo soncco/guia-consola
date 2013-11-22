@@ -443,9 +443,9 @@ El ejemplo más básico lo vemos en los hostings que usan CPanel, donde encontra
 
 Más información en los [Recursos](#recursos).
 
-## <a name="ssh">Introducción a SSH: Olvídate del FTP</a>
-
 **[[ Volver al índice ]](#INDEX)**
+
+## <a name="ssh">Introducción a SSH: Olvídate del FTP</a>
 
 SSH (Secure Shell) es la manera rápida de acceder a equipos remotos y manejarlos mediante la consola.
 
@@ -458,6 +458,9 @@ SSH (Secure Shell) es la manera rápida de acceder a equipos remotos y manejarlo
 
   - Primero nos pide un lugar donde estará guardado nuestra llave, generalmente está en el directorio <code>~/.ssh</code>
   - Luego nos pide una contraseña, ponemos la que nos guste.
+  - Se han creado dos archivos:
+    - ~/.ssh/id_rsa (La clave privada)
+    - ~/.ssh/id_rsa.pub (La clave pública)
 
 
 ### Acceso remoto, olvidándonos de FTP
