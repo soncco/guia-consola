@@ -397,3 +397,26 @@ El ejemplo más básico lo vemos en los hostings que usan CPanel, donde encontra
 **[[ Volver al índice ]](#INDEX)**
 
 ## <a name="compresion">Compresión y descompresión de archivos</a>
+
+### Descompresión
+
+  ```bash
+  # Archivos tar.gz
+  $ tar -zxf archivo.tar.gz
+
+  # Archivos zip
+  $ unzip archivo.zip
+  ```
+
+### Compresión
+
+  ```bash
+  # Empaqueto y comprimo la carpeta braulio y la llamo archivo.tar.gz
+  $ tar -czf archivo.tar.gz braulio
+
+  # Comprimo la carpeta braulio y la llamo archivo.zip
+  $ zip archivo.zip archivo
+  ```
+
+**[[ Volver al índice ]](#INDEX)**
+
