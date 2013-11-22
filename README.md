@@ -474,3 +474,5 @@ Pronto
 Pronto
 
 **[[ Volver al índice ]](#INDEX)**
+
+*17  Y si hay errores, son errores del hombre. Mas he aquí, no sabemos que haya errores; no obstante, Dios sabe todas las cosas; por tanto, cuídese aquel que condene, no sea que corra peligro del fuego del infierno.* [Mormon 8:17](http://www.lds.org/scriptures/bofm/morm/8.17?lang=spa#16)
