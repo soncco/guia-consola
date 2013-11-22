@@ -101,6 +101,6 @@ Olvidémonos de C:, D:, E:, etc :)
      - El <code>.</code> se refiere a la carpeta en sí misma.
      - El <code>..</code> se refiere a la carpeta padre.
 
-**[[ Volver al índice ]](#INDEX)**
+  **[[ Volver al índice ]](#INDEX)**
 
   - ### <a name="comandos">Comandos básicos</a>
