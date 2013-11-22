@@ -9,8 +9,8 @@
   3. [Sistema de archivos](#archivos)
     - [Rutas relativas y absolutas](#rutas)
     - [Comandos básicos](#comandos)
+    - [Listar directorios](#listado)
     - [Búsqueda](#busqueda)
-    - [Listado](#listado)
     - [Permisos](#permisos)
     - [Enlaces simbólicos](#enlaces)
   4. [Compresión de descompresión](#compresion)
@@ -140,22 +140,6 @@ Olvidémonos de C:, D:, E:, etc :)
   $ cd /
   ```
 
-  * #### Listar directorios
-
-  ```bash
-  # Muestra carpetas y archivos en el directorio actual
-  $ ls
-
-  # Muestra carpetas y archivos en un directorio
-  $ ls <directorio>
-
-  # Muestra las carpetas y archivos incluyendo los ocultos, y los muestra en forma de columnas.
-  $ ls -la
-
-  # Similar al anterior en Ubuntu
-  $ ll
-  ```
-
   * #### Copiar, mover, renombrar, borrar
   ```bash
   # Copiar directorio
@@ -197,6 +181,18 @@ Olvidémonos de C:, D:, E:, etc :)
   * #### Para los curiosos
 
   ```bash
+  # Ver el espacio ocupado en la carpeta actual
+  $ du
+
+  # Lo mismo pero para humanos
+  $ du -hs
+
+  # Ver el tamaño de cierto archivo
+  $ du -hs index.html
+
+  # O de cierta carpeta
+  $ d u -hs braulio
+
   # Ver mi directorio actual
   $ pwd
 
@@ -214,4 +210,72 @@ Olvidémonos de C:, D:, E:, etc :)
   # Ver como funciona cierto comando
   $ type ls
   # ls es un alias de 'ls --color=auto' (en Ubuntu)
+
+  # Ver todos los comandos que he escrito desde el inicio de los tiempos
+  $ less ~/.bash_history
   ```
+
+  **[[ Volver al índice ]](#INDEX)**
+
+  - ### <a name="listado">Listar directorios</a>
+
+  ```bash
+  # Muestra carpetas y archivos en el directorio actual
+  $ ls
+
+  # Muestra carpetas y archivos en un directorio
+  $ ls <directorio>
+
+  # Muestra las carpetas y archivos incluyendo los ocultos, y los muestra en forma de columnas.
+  $ ls -la
+
+  # Similar al anterior en Ubuntu
+  $ ll
+
+  # Puedes crear tu propio comando con
+  $ alias myll='ls -la'
+
+  # Y lo usas con
+  $ myll
+
+  # Ver la salida anterior mostrando cierto patrón
+  $ ll | grep html
+  # Muestra la lista resaltando todos los que contienen el string html en su nombre
+
+  # Guardar la salida a un archivo
+  $ ll > listado1.txt
+  # Se crea un archivo listado1.txt con la salida de ll
+  ```
+
+  **[[ Volver al índice ]](#INDEX)**
+
+  - ### <a name="listado">Búsqueda</a>
+  ```bash
+  # Muestra todos los archivos y carpetas recursivamente dentro del directorio actual
+  $ find
+
+  # Lo mismo pero más complicado
+  $ find .
+
+  # Muestra recursivamente solo los archivos que tengan .html en la carpeta actual
+  $ find . -name \*.html
+
+  # Lo mismo
+  $ find . -name '*.html'
+
+  # Lo mismo pero con grep
+  $ find . | grep .html
+
+  # Lo mismo pero en otra carpeta
+  $ find <otracarpeta> | grep .html
+
+  # El comando locate guarda una base de datos de todos los archivos y carpetas que tenemos, actualiza estos cada cierto tiempo
+  # Para actualizarlo ahora mismo
+
+  $ updatedb
+
+  # Para encontrar cierto archivo o carpeta con el nombre brau
+  $ locate brau
+  ```
+
+  **[[ Volver al índice ]](#INDEX)**
