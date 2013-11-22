@@ -105,4 +105,4 @@ Olvidémonos de C:, D:, E:, etc :)
 
   - ### <a name="comandos">Comandos básicos</a>
 
-  * #### Creación de archivos y directorios
+   * #### Creación de archivos y directorios
