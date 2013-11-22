@@ -37,7 +37,7 @@ Podemos obtener ayuda sobre un comando de las siguientes maneras:
 
   - ### Comando <code>man</code>
 
-  ```
+  ```bash
   man <comando>
   ```
 
@@ -45,7 +45,7 @@ Podemos obtener ayuda sobre un comando de las siguientes maneras:
 
   - ### Opción <code>--help</code>
 
-  ```
+  ```bash
   <comando> --help
   ```
 
@@ -69,7 +69,7 @@ Olvidémonos de C:, D:, E:, etc :)
 
   * #### Ruta absoluta
 
-    ```
+    ```bash
     # Para acceder a la carpeta images
     cd /home/braulio/images
 
@@ -84,7 +84,7 @@ Olvidémonos de C:, D:, E:, etc :)
 
   * #### Rutas relativas
 
-    ```
+    ```bash
     # Si estuviera en la carpeta /home/braulio, accedo a images con:
     cd images
     cd ~/images
