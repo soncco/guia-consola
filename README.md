@@ -362,11 +362,11 @@ Olvidémonos de C:, D:, E:, etc :)
 
   - ### Cambiando de usuario
 
+  ```batch
   # Estoy con el usuario braulio, y quiero usar el usuario deicy
   $ su deicy
 
   # Quiero ejecutar los comandos como root
   $ sudo mkdir carpeta
   # Crea una carpeta como superman
-
-
+  ```
