@@ -41,6 +41,8 @@ Podemos obtener ayuda sobre un comando de las siguientes maneras:
   man <comando>
   ```
 
+  Muestra el manual del comando
+
   - ### Opción <code>--help</code>
 
   ```
@@ -49,6 +51,54 @@ Podemos obtener ayuda sobre un comando de las siguientes maneras:
 
   - ### Desde la web
 
-  [Explain Shell](http://explainshell.com/)
+  [Explain Shell](http://explainshell.com/) Un sitio que permite explicar específicamente la mayoría de comandos.
 
-  Un sitio que permite explicar la mayoría de comandos específicamente
+  **[[ Volver al índice ]](#INDEX)**
+
+## <a name="archivos">Sistema de archivos</a>
+
+Olvidémonos de C:, D:, E:, etc :)
+
+  - ### <a name="rutas">Rutas relativas y absolutas</a>
+
+  En Linux, si existe el usuario <code>braulio</code>, entonces también existe una carpeta en la ruta <code>/home/braulio</code>.
+
+  Crearemos una carpeta dentro de <code>braulio</code> llamada <code>images</code>.
+
+  Entonces podemos acceder a estas carpetas mediante:
+
+    - #### Ruta absoluta
+
+    ```
+    # Para acceder a la carpeta images
+    cd /home/braulio/images
+
+    # Para acceder a la carpeta braulio
+    cd /home/braulio
+
+    # Para acceder a la carpeta home
+    cd /home
+    ```
+
+    Donde el <code>/</code> inicial se refiere a la raiz del sistema de archivos.
+
+    - #### Rutas relativas
+
+    ```
+    # Si estuviera en la carpeta /home/braulio, accedo a images con:
+    cd images
+    cd ~/images
+    cd ./images
+
+    # Si estoy en la carpeta /home/braulio/images regreso a la carpeta padre con
+    cd .. # /home/braulio
+
+    # Y a la carpeta padre del padre con
+    cd ../.. # /home
+    ```
+
+    Donde:
+    
+    - El <code>~</code> significa la carpeta del usuario, es decir, /home/braulio.
+    - El <code>.</code> se refiere a la carpeta en sí misma.
+    - El <code>..</code> se refiere a la carpeta padre.
