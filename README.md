@@ -13,12 +13,11 @@
     - [Búsqueda](#busqueda)
     - [Permisos](#permisos)
     - [Enlaces simbólicos](#enlaces)
-  4. [Compresión de descompresión](#compresion)
-  5. [Estado del sistema](#estado)
-  6. [Editando archivos](#editar)
-  7. [Introducción a SSH](#ssh)
-  8. [Olvídate del FTP](#ftp)
-  9. [Recursos](#recursos)
+  4. [Compresión y descompresión de archivos](#compresion)
+  5. [Editando archivos](#editar)
+  6. [Introducción a SSH](#ssh)
+  7. [Olvídate del FTP](#ftp)
+  8. [Recursos](#recursos)
 
 ## <a name="introduccion">Introducción</a>
 
@@ -177,6 +176,14 @@ Olvidémonos de C:, D:, E:, etc :)
   # Borra una carpeta
   $ rm -rf braulio
   ```
+
+  * #### Descarga de archivos
+  ```bash
+  # Descargar un archivo usando wget
+  $ wget http://nodejs.org/dist/v0.10.22/node-v0.10.22.tar.gz
+
+  # Descargar un archivo usando curl
+  $ curl http://nodejs.org/dist/v0.10.22/node-v0.10.22.tar.gz
 
   * #### Para los curiosos
 
@@ -370,3 +377,20 @@ Olvidémonos de C:, D:, E:, etc :)
   $ sudo mkdir carpeta
   # Crea una carpeta como superman
   ```
+
+  **[[ Volver al índice ]](#INDEX)**
+
+  - ### <a name="permisos">Enlaces simbólicos</a>
+
+  Los enlaces simbólicos sirven para tener una referencia a un archivo o carpeta y acceder a esta sin tener que ir a la ruta.
+
+  El ejemplo más básico lo vemos en los hostings que usan CPanel, donde encontramos la carpeta <code>public_html</code> y el enlace simbólico <code>www</code>, si entramos a ambos, veremos el mismo contenido.
+
+  ```bash
+  # Creamos el enlace simbólico <code>www</code> para <code>public_html</code>
+  $ ln -ls ~/public_html www
+  ```
+
+  **[[ Volver al índice ]](#INDEX)**
+
+## <a name="compresion">Compresión y descompresión de archivos</a>
