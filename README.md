@@ -90,10 +90,10 @@ Olvidémonos de C:, D:, E:, etc :)
     cd ~/images
     cd ./images
 
-    # Si estoy en la carpeta /home/braulio/images regreso a la carpeta padre con
+    # Si estoy en la carpeta /home/braulio/images regreso a la carpeta padre con:
     cd .. # /home/braulio
 
-    # Y a la carpeta padre del padre con
+    # Y a la carpeta padre del padre con:
     cd ../.. # /home
     ```
 
@@ -102,3 +102,8 @@ Olvidémonos de C:, D:, E:, etc :)
     - El <code>~</code> significa la carpeta del usuario, es decir, /home/braulio.
     - El <code>.</code> se refiere a la carpeta en sí misma.
     - El <code>..</code> se refiere a la carpeta padre.
+
+  - ### <a name="rutas">Comodines</a>
+
+  Crearemos dentro de <code>/home/braulio</code> las carpetas <code>javascript</code>, <code>coffeescript</code>, <code>css</code> y <code>sass</code>.
+
