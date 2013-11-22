@@ -294,13 +294,13 @@ Olvidémonos de C:, D:, E:, etc :)
 
   Vemos 7 columnas las cuales indican:
 
-  1. Permisos
-  2. Directorios
-  3. Usuario
-  4. Grupo
-  5. Tamaño en bytes
-  6. Fecha de modificación
-  7. Archivo o directorio
+    1. Permisos
+    2. Directorios
+    3. Usuario
+    4. Grupo
+    5. Tamaño en bytes
+    6. Fecha de modificación
+    7. Archivo o directorio
 
   Tomando la primera columna la dividimos en cuatro subcolumnas y las separamos por <code>|</code> para explicarlo mejor, en el caso del archivo README.md
 
@@ -308,10 +308,10 @@ Olvidémonos de C:, D:, E:, etc :)
   -|rw-|rw-|r--
   ```
 
-  - La primera columna muestra <code>-</code> y nos indica que <code>README.md</code> es un archivo, caso contrario sería un directorio y mostraría <code>d</code>.
+    - La primera columna muestra <code>-</code> y nos indica que <code>README.md</code> es un archivo, caso contrario sería un directorio y mostraría <code>d</code>.
 
-  - La segunda columna muestra <code>rw-</code> y nos indica que este archivo tiene permisos de lectura (r), de escritura (w), mas no de ejecución(x) por parte del usuario.
+    - La segunda columna muestra <code>rw-</code> y nos indica que este archivo tiene permisos de lectura (r), de escritura (w), mas no de ejecución(x) **por parte del usuario**.
 
-  - La tercera columna muestra <code>rw-</code> y nos indica que este archivo tiene permisos de lectura (r), de escritura (w), mas no de ejecución(x) por parte del grupo.
+    - La tercera columna muestra <code>rw-</code> y nos indica que este archivo tiene permisos de lectura (r), de escritura (w), mas no de ejecución(x) **por parte del grupo**.
 
-  - La tercera columna muestra <code>r-</code> y nos indica que este archivo tiene permisos de lectura (r), mas no de escritura (w) ni de ejecución(x) por parte de otros.
+    - La tercera columna muestra <code>r-</code> y nos indica que este archivo tiene permisos de lectura (r), mas no de escritura (w) ni de ejecución(x) **por parte de otros**.
