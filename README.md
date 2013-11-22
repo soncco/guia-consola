@@ -326,7 +326,7 @@ Olvidémonos de C:, D:, E:, etc :)
 
     - La tercera columna muestra <code>r-</code> y nos indica que este archivo tiene permisos de lectura (r), mas no de escritura (w) ni de ejecución(x) **por parte de otros**.
 
-   - #### Cambiando permisos
+  - #### Cambiando permisos
 
    Cada permiso está representado por un número de la siguiente manera:
 
