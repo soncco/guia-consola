@@ -315,3 +315,25 @@ Olvidémonos de C:, D:, E:, etc :)
    - La tercera columna muestra <code>rw-</code> y nos indica que este archivo tiene permisos de lectura (r), de escritura (w), mas no de ejecución(x) **por parte del grupo**.
 
    - La tercera columna muestra <code>r-</code> y nos indica que este archivo tiene permisos de lectura (r), mas no de escritura (w) ni de ejecución(x) **por parte de otros**.
+
+  - #### Cambiando permisos
+
+  Cada permiso está representado por un número de la siguiente manera:
+
+   - Read (r) vale 4
+   - Write (w) vale 2
+   - Execute (x) vale 1
+
+  Sabiendo esto puedo cambiar los permisos del archivo index.html:
+
+  ```batch
+  chmod 775 index.html
+  ```
+
+  Donde:
+   - El primer 7 viene de <code>4+2+1</code>, es decir, que <code>index.html</code> tiene permisos de <code>rwx</code> para el usuario.
+   - Igual que el anterior pero para el grupo.
+   - El 5 viene de <code>4+1</code>, es decir, que <code>index.html</code> tiene permisos de <code>r-x</code>.
+
+  
+
