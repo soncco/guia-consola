@@ -1,6 +1,6 @@
 # Guía de la Consola de Linux
 
-*Si te dices a ti mismo web developer y no sabes usar la consola, no eres un web developer*
+*Si te dices a ti mismo web developer y no sabes usar la consola, entonces no eres un web developer.*
 
 ## <a name="INDEX">Índice</a>
 
@@ -191,7 +191,7 @@ Olvidémonos de C:, D:, E:, etc :)
   $ du -hs index.html
 
   # O de cierta carpeta
-  $ d u -hs braulio
+  $ du -hs braulio
 
   # Ver mi directorio actual
   $ pwd
@@ -249,7 +249,7 @@ Olvidémonos de C:, D:, E:, etc :)
 
   **[[ Volver al índice ]](#INDEX)**
 
-  - ### <a name="listado">Búsqueda</a>
+  - ### <a name="busqueda">Búsqueda</a>
   ```bash
   # Muestra todos los archivos y carpetas recursivamente dentro del directorio actual
   $ find
@@ -279,3 +279,39 @@ Olvidémonos de C:, D:, E:, etc :)
   ```
 
   **[[ Volver al índice ]](#INDEX)**
+
+  - ### <a name="permisos">Permisos</a>
+
+  Si usamos el listado en esta carpeta lo que encontremos es:
+
+  ```
+  drwxr-xr-x  3 brau brau  4096 nov 22 09:35 ./
+  drwxrwxr-x 33 brau brau  4096 nov 21 23:13 ../
+  drwxrwxr-x  8 brau brau  4096 nov 22 10:18 .git/
+  -rw-rw-r--  1 brau brau 11325 nov 21 23:13 LICENSE
+  -rw-rw-r--  1 brau brau  6920 nov 22 10:18 README.md
+  ```
+
+  Vemos 7 columnas las cuales indican:
+
+  1. Permisos
+  2. Directorios
+  3. Usuario
+  4. Grupo
+  5. Tamaño en bytes
+  6. Fecha de modificación
+  7. Archivo o directorio
+
+  Tomando la primera columna la dividimos en cuatro subcolumnas y las separamos por <code>|</code> para explicarlo mejor, en el caso del archivo README.md
+
+  ```batch
+  -|rw-|rw-|r--
+  ```
+
+  - La primera columna muestra <code>-</code> y nos indica que <code>README.md</code> es un archivo, caso contrario sería un directorio y mostraría <code>d</code>.
+
+  - La segunda columna muestra <code>rw-</code> y nos indica que este archivo tiene permisos de lectura (r), de escritura (w), mas no de ejecución(x) por parte del usuario.
+
+  - La tercera columna muestra <code>rw-</code> y nos indica que este archivo tiene permisos de lectura (r), de escritura (w), mas no de ejecución(x) por parte del grupo.
+
+  - La tercera columna muestra <code>r-</code> y nos indica que este archivo tiene permisos de lectura (r), mas no de escritura (w) ni de ejecución(x) por parte de otros.
