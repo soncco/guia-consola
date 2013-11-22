@@ -33,23 +33,23 @@ Esta pequeña guía está enfocada a los comandos más usados por los desarrolla
 
 Podemos obtener ayuda sobre un comando de las siguientes maneras:
 
-  - ### Comando <code>man</code>
+### Comando <code>man</code>
 
   ```bash
+  # Muestra el manual del comando
   $ man <comando>
   ```
 
-  Muestra el manual del comando
-
-  - ### Opción <code>--help</code>
+### Opción <code>--help</code>
 
   ```bash
+  # Muestra la ayuda del comando
   $ <comando> --help
   ```
 
-  - ### Desde la web
+### Desde la web
 
-  [Explain Shell](http://explainshell.com/), un sitio que permite explicar específicamente la mayoría de comandos.
+[Explain Shell](http://explainshell.com/), un sitio que permite explicar específicamente la mayoría de comandos.
 
 **[[ Volver al índice ]](#INDEX)**
 
