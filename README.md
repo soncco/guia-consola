@@ -93,7 +93,7 @@ Donde el <code>/</code> inicial se refiere a la raiz del sistema de archivos.
 
   # Y a la carpeta padre del padre con:
   $ cd ../.. # /home
-    ```
+  ```
 
 Donde:
 
