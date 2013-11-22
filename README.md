@@ -105,6 +105,8 @@ Olvidémonos de C:, D:, E:, etc :)
 
   - ### <a name="comandos">Comandos básicos</a>
 
+  Todos los comandos que se usan básicamente para directorios y archivos.
+
    * #### Creación de archivos y directorios 
 
    ```bash
