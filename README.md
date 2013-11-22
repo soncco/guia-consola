@@ -105,122 +105,122 @@ Olvidémonos de C:, D:, E:, etc :)
 
   - ### <a name="comandos">Comandos básicos</a>
 
-  * #### Creación de archivos y directorios 
+   * #### Creación de archivos y directorios 
 
-  ```bash
-  # Creamos el archivo index.html
-  $ touch index.html
+   ```bash
+   # Creamos el archivo index.html
+   $ touch index.html
 
-  # Creamos el directorio logs
-  $ mkdir logs
+   # Creamos el directorio logs
+   $ mkdir logs
 
-  # Creamos varios directorios
-  $ mkdir media templates
+   # Creamos varios directorios
+   $ mkdir media templates
 
-  # Creamos directorios dentro de directorios, aunque no existan
-  $ mkdir -p public/{images,css,js} # Crea el archivo public y dentro de este la carpeta images, css y js
-  
+   # Creamos directorios dentro de directorios, aunque no existan
+   $ mkdir -p public/{images,css,js} # Crea el archivo public y dentro de este la carpeta images, css y js
+   
   ```
 
-  * #### Moverse entre directorios
+   * #### Moverse entre directorios
 
-  ```bash
-  # Cambiar a cierto directorio
-  $ cd <directorio>
+   ```bash
+   # Cambiar a cierto directorio
+   $ cd <directorio>
 
-  # Ir al directorio padre
-  $ cd ..
+   # Ir al directorio padre
+   $ cd ..
 
-  # Ir al directorio /home/braulio desde cualquier lugar
-  $ cd ~
-  $ cd
+   # Ir al directorio /home/braulio desde cualquier lugar
+   $ cd ~
+   $ cd
 
-  # Ir al directorio raiz
-  $ cd /
-  ```
+   # Ir al directorio raiz
+   $ cd /
+   ```
 
-  * #### Copiar, mover, renombrar, borrar
-  ```bash
-  # Copiar directorio
-  $ cp braulio braulito
-  # Ahora tengo dos directorios, uno llamado braulio y otro braulito
+   * #### Copiar, mover, renombrar, borrar
+   ```bash
+   # Copiar directorio
+   $ cp braulio braulito
+   # Ahora tengo dos directorios, uno llamado braulio y otro braulito
 
-  # Copiar archivos
-  $ cp index.html inicio.html
-  # Ahora tengo dos archivos, uno llamado index.html y otro inicio.html
+   # Copiar archivos
+   $ cp index.html inicio.html
+   # Ahora tengo dos archivos, uno llamado index.html y otro inicio.html
 
-  # Copiar archivos dentro de un directorio a otro
-  $ cp braulio/* otrodirectorio
+   # Copiar archivos dentro de un directorio a otro
+   $ cp braulio/* otrodirectorio
 
-  # Copiar sólo los archivos html
-  $ cp braulio/*.html otrodirectorio
+   # Copiar sólo los archivos html
+   $ cp braulio/*.html otrodirectorio
 
-  # Renombra la carpeta braulito a brau
-  $ mv braulito brau
+   # Renombra la carpeta braulito a brau
+   $ mv braulito brau
 
-  # Mueve la carpeta brau al directorio padre
-  $ mv brau ..
+   # Mueve la carpeta brau al directorio padre
+   $ mv brau ..
 
-  # Mueve la carpeta index que está en la carpeta padre a mi directorio actual
-  $ mv ~/brau .
+   # Mueve la carpeta index que está en la carpeta padre a mi directorio actual
+   $ mv ~/brau .
 
-  # Si no funciona podemos usar el parámetro -f (Force)
-  $ mv -f ~/brau .
+   # Si no funciona podemos usar el parámetro -f (Force)
+   $ mv -f ~/brau .
 
-  # Borra un archivo
-  $ rm inicio.html
+   # Borra un archivo
+   $ rm inicio.html
 
-  # Borra los archivos .html
-  $ rm *.html
+   # Borra los archivos .html
+   $ rm *.html
 
-  # Borra una carpeta
-  $ rm -rf braulio
-  ```
+   # Borra una carpeta
+   $ rm -rf braulio
+   ```
 
-  * #### Descarga de archivos
-  ```bash
-  # Descargar un archivo usando wget
-  $ wget http://nodejs.org/dist/v0.10.22/node-v0.10.22.tar.gz
+   * #### Descarga de archivos
+   ```bash
+   # Descargar un archivo usando wget
+   $ wget http://nodejs.org/dist/v0.10.22/node-v0.10.22.tar.gz
 
-  # Descargar un archivo usando curl
-  $ curl http://nodejs.org/dist/v0.10.22/node-v0.10.22.tar.gz
+   # Descargar un archivo usando curl
+   $ curl http://nodejs.org/dist/v0.10.22/node-v0.10.22.tar.gz
 
-  * #### Para los curiosos
+   * #### Para los curiosos
 
-  ```bash
-  # Ver el espacio ocupado en la carpeta actual
-  $ du
+   ```bash
+   # Ver el espacio ocupado en la carpeta actual
+   $ du
 
-  # Lo mismo pero para humanos
-  $ du -hs
+   # Lo mismo pero para humanos
+   $ du -hs
 
-  # Ver el tamaño de cierto archivo
-  $ du -hs index.html
+   # Ver el tamaño de cierto archivo
+   $ du -hs index.html
 
-  # O de cierta carpeta
-  $ du -hs braulio
+   # Ver el tamaño de cierta carpeta
+   $ du -hs braulio
 
-  # Ver mi directorio actual
-  $ pwd
+   # Ver mi directorio actual
+   $ pwd
 
-  # Ver el contenido de un archivo página por página
-  $ less archivo.html
-  # Después de verlo podemos salir presionando q
+   # Ver el contenido de un archivo página por página
+   $ less archivo.html
+   # Después de verlo podemos salir presionando q
 
-  # Concatenar el contenido de varios archivos y mostrarlos
-  $ cat archivo.html estilo.css
+   # Concatenar el contenido de varios archivos y mostrarlos
+   $ cat archivo.html estilo.css
 
-  # Ver desde donde se ejecuta un comando
-  $ which cat
-  # /bin/cat
+   # Ver desde donde se ejecuta un comando
+   $ which cat
+   # /bin/cat
 
-  # Ver como funciona cierto comando
-  $ type ls
-  # ls es un alias de 'ls --color=auto' (en Ubuntu)
+   # Ver como funciona cierto comando
+   $ type ls
+   # ls es un alias de 'ls --color=auto' (en Ubuntu)
 
-  # Ver todos los comandos que he escrito desde el inicio de los tiempos
-  $ less ~/.bash_history
-  ```
+   # Ver todos los comandos que he escrito desde el inicio de los tiempos
+   $ less ~/.bash_history
+   ```
 
   **[[ Volver al índice ]](#INDEX)**
 
