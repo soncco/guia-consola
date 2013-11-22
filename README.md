@@ -462,6 +462,12 @@ SSH (Secure Shell) es la manera rápida de acceder a equipos remotos y manejarlo
 
 ### Acceso remoto, olvidándonos de FTP
 
+Pronto
+
 **[[ Volver al índice ]](#INDEX)**
 
 ## <a name="recursos">Recursos</a>
+
+Pronto
+
+**[[ Volver al índice ]](#INDEX)**
