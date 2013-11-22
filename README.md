@@ -370,7 +370,7 @@ Olvidémonos de C:, D:, E:, etc :)
    $ chown deicy:deicy index.html
    ```
 
-   - ### Cambiando de usuario
+  - ### Cambiando de usuario
 
    ```bash
    # Estoy con el usuario braulio, y quiero usar el usuario deicy
@@ -383,7 +383,7 @@ Olvidémonos de C:, D:, E:, etc :)
 
   **[[ Volver al índice ]](#INDEX)**
 
-   - ### <a name="enlaces">Enlaces simbólicos</a>
+  - ### <a name="enlaces">Enlaces simbólicos</a>
 
    Los enlaces simbólicos sirven para tener una referencia a un archivo o carpeta y acceder a esta sin tener que ir a la ruta.
 
