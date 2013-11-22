@@ -90,10 +90,10 @@ Olvidémonos de C:, D:, E:, etc :)
     $ cd ./images
 
     # Si estoy en la carpeta /home/braulio/images regreso a la carpeta padre con:
-    cd .. # /home/braulio
+    $ cd .. # /home/braulio
 
     # Y a la carpeta padre del padre con:
-    cd ../.. # /home
+    $ cd ../.. # /home
     ```
 
     Donde:
