@@ -140,6 +140,7 @@ Olvidémonos de C:, D:, E:, etc :)
    ```
 
    * #### Copiar, mover, renombrar, borrar
+
    ```bash
    # Copiar directorio
    $ cp braulio braulito
@@ -178,6 +179,7 @@ Olvidémonos de C:, D:, E:, etc :)
    ```
 
    * #### Descarga de archivos
+   
    ```bash
    # Descargar un archivo usando wget
    $ wget http://nodejs.org/dist/v0.10.22/node-v0.10.22.tar.gz
@@ -257,6 +259,7 @@ Olvidémonos de C:, D:, E:, etc :)
   **[[ Volver al índice ]](#INDEX)**
 
   - ### <a name="busqueda">Búsqueda</a>
+
   ```bash
   # Muestra todos los archivos y carpetas recursivamente dentro del directorio actual
   $ find
