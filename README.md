@@ -76,7 +76,7 @@ Entonces podemos acceder a estas carpetas mediante:
 
   # Para acceder a la carpeta home
   $ cd /home
-    ```
+  ```
 
 Donde el <code>/</code> inicial se refiere a la raiz del sistema de archivos.
 
