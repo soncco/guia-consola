@@ -196,9 +196,10 @@ Olvidémonos de C:, D:, E:, etc :)
 
   * #### Para los curiosos
 
+  ```bash
   # Ver mi directorio actual
   $ pwd
-  
+
   # Ver el contenido de un archivo página por página
   $ less archivo.html
   # Después de verlo podemos salir presionando q
@@ -213,4 +214,4 @@ Olvidémonos de C:, D:, E:, etc :)
   # Ver como funciona cierto comando
   $ type ls
   # ls es un alias de 'ls --color=auto' (en Ubuntu)
-
+  ```
