@@ -327,13 +327,46 @@ Olvidémonos de C:, D:, E:, etc :)
   Sabiendo esto puedo cambiar los permisos del archivo index.html:
 
   ```batch
-  chmod 775 index.html
+  # Cambiando los permisos de index.html
+  $ chmod 775 index.html
   ```
 
   Donde:
    - El primer 7 viene de <code>4+2+1</code>, es decir, que <code>index.html</code> tiene permisos de <code>rwx</code> para el usuario.
    - Igual que el anterior pero para el grupo.
-   - El 5 viene de <code>4+1</code>, es decir, que <code>index.html</code> tiene permisos de <code>r-x</code>.
+   - El 5 viene de <code>4+1</code>, es decir, que <code>index.html</code> tiene permisos de <code>r-x</code> para otros.
 
-  
+  Para los directorios:
+
+  ```batch
+  # Cambiando los permisos de la carpeta braulio
+  $ chmod 444 braulio
+  # Ahora la carpeta braulio es de sólo lectura.
+
+  # Cambiando los permisos de la carpeta Braulio y de todo su contenido recursivamente
+  $ chmod -R 444 braulio 
+  ```
+
+  - #### Cambiando de propietario y grupo
+
+  ```batch
+  # index.html pertenecía al usuario brau, ahora pertenecerá al usuario deicy
+  $ chown deicy index.html
+
+  # index.html pertenecía al grupo brau, ahora pertenecerá al grupo deicy
+  $ chgrp deicy index.html
+
+  # Juntando ambos comandos
+  $ chown deicy:deicy index.html
+  ```
+
+  - ### Cambiando de usuario
+
+  # Estoy con el usuario braulio, y quiero usar el usuario deicy
+  $ su deicy
+
+  # Quiero ejecutar los comandos como root
+  $ sudo mkdir carpeta
+  # Crea una carpeta como superman
+
 
