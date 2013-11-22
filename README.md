@@ -2,7 +2,7 @@
 
 *Si te dices a ti mismo web developer y no sabes usar la consola, no eres un web developer*
 
-## <a name="'INDEX">Índice</a>
+## <a name="INDEX">Índice</a>
 
   1. [Introducción](#introduccion)
   2. [Ayuda](#ayuda)
@@ -30,3 +30,25 @@ Los sistemas UNIX proveen navitamente terminales con los cuales podemos hacer mu
 Esta pequeña guía está enfocada a los comandos más usados por los desarrolladores web y también tiene la intención de ayudar a novatos a su uso.
 
 **[[ Volver al índice ]](#INDEX)**
+
+## <a name="ayuda">Ayuda</a>
+
+Podemos obtener ayuda sobre un comando de las siguientes maneras:
+
+  - ### Comando <code>man</code>
+
+  ```
+  man <comando>
+  ```
+
+  - ### Opción <code>--help</code>
+
+  ```
+  <comando> --help
+  ```
+
+  - ### Desde la web
+
+  [Explain Shell](http://explainshell.com/)
+
+  Un sitio que permite explicar la mayoría de comandos específicamente
