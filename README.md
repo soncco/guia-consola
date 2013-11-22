@@ -101,7 +101,7 @@ Olvidémonos de C:, D:, E:, etc :)
      - El <code>.</code> se refiere a la carpeta en sí misma.
      - El <code>..</code> se refiere a la carpeta padre.
 
-  **[[ Volver al índice ]](#INDEX)**
+**[[ Volver al índice ]](#INDEX)**
 
   - ### <a name="comandos">Comandos básicos</a>
 
@@ -221,7 +221,7 @@ Olvidémonos de C:, D:, E:, etc :)
    $ less ~/.bash_history
    ```
 
-  **[[ Volver al índice ]](#INDEX)**
+**[[ Volver al índice ]](#INDEX)**
 
   - ### <a name="listado">Listar directorios</a>
 
@@ -253,7 +253,7 @@ Olvidémonos de C:, D:, E:, etc :)
   # Se crea un archivo listado1.txt con la salida de ll
   ```
 
-  **[[ Volver al índice ]](#INDEX)**
+**[[ Volver al índice ]](#INDEX)**
 
   - ### <a name="busqueda">Búsqueda</a>
   ```bash
@@ -284,7 +284,7 @@ Olvidémonos de C:, D:, E:, etc :)
   $ locate brau
   ```
 
-  **[[ Volver al índice ]](#INDEX)**
+**[[ Volver al índice ]](#INDEX)**
 
   - ### <a name="permisos">Permisos</a>
 
@@ -377,7 +377,7 @@ Olvidémonos de C:, D:, E:, etc :)
   # Crea una carpeta como superman
   ```
 
-  **[[ Volver al índice ]](#INDEX)**
+**[[ Volver al índice ]](#INDEX)**
 
   - ### <a name="enlaces">Enlaces simbólicos</a>
 
@@ -390,6 +390,6 @@ Olvidémonos de C:, D:, E:, etc :)
   $ ln -ls ~/public_html www
   ```
 
-  **[[ Volver al índice ]](#INDEX)**
+**[[ Volver al índice ]](#INDEX)**
 
 ## <a name="compresion">Compresión y descompresión de archivos</a>
