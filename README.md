@@ -8,8 +8,7 @@
   2. [Ayuda](#ayuda)
   3. [Sistema de archivos](#archivos)
     - [Rutas relativas y absolutas](#rutas)
-    - [Comodines](#comodines)
-    - [Comandos básicos](#comandos-archivos)
+    - [Comandos básicos](#comandos)
     - [Búsqueda](#busqueda)
     - [Listado](#listado)
     - [Permisos](#permisos)
@@ -38,7 +37,7 @@ Podemos obtener ayuda sobre un comando de las siguientes maneras:
   - ### Comando <code>man</code>
 
   ```bash
-  man <comando>
+  $ man <comando>
   ```
 
   Muestra el manual del comando
@@ -46,7 +45,7 @@ Podemos obtener ayuda sobre un comando de las siguientes maneras:
   - ### Opción <code>--help</code>
 
   ```bash
-  <comando> --help
+  $ <comando> --help
   ```
 
   - ### Desde la web
@@ -71,13 +70,13 @@ Olvidémonos de C:, D:, E:, etc :)
 
     ```bash
     # Para acceder a la carpeta images
-    cd /home/braulio/images
+    $ cd /home/braulio/images
 
     # Para acceder a la carpeta braulio
-    cd /home/braulio
+    $ cd /home/braulio
 
     # Para acceder a la carpeta home
-    cd /home
+    $ cd /home
     ```
 
     Donde el <code>/</code> inicial se refiere a la raiz del sistema de archivos.
@@ -86,9 +85,9 @@ Olvidémonos de C:, D:, E:, etc :)
 
     ```bash
     # Si estuviera en la carpeta /home/braulio, accedo a images con:
-    cd images
-    cd ~/images
-    cd ./images
+    $ cd images
+    $ cd ~/images
+    $ cd ./images
 
     # Si estoy en la carpeta /home/braulio/images regreso a la carpeta padre con:
     cd .. # /home/braulio
@@ -103,7 +102,22 @@ Olvidémonos de C:, D:, E:, etc :)
     - El <code>.</code> se refiere a la carpeta en sí misma.
     - El <code>..</code> se refiere a la carpeta padre.
 
-  - ### <a name="rutas">Comodines</a>
+  - ### <a name="comandos">Comandos básicos</a>
 
-  Crearemos dentro de <code>/home/braulio</code> las carpetas <code>javascript</code>, <code>coffeescript</code>, <code>css</code> y <code>sass</code>.
+  * #### Creación de archivos y directorios 
+
+  ```bash
+  # Creamos el archivo index.html
+  $ touch index.html
+
+  # Creamos el directorio logs
+  $ mkdir logs
+
+  # Creamos varios directorios
+  $ mkdir media templates
+
+  # Creamos directorios dentro de directorios, aunque no existan
+  $ mkdir -p public/{images,css,js # Crea el archivo public y dentro de este la carpeta images, css y js
+  
+  ```
 
