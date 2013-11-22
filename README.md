@@ -5,19 +5,19 @@
 ## <a name="INDEX">Índice</a>
 
   1. [Introducción](#introduccion)
-  2. [Ayuda](#ayuda)
-  3. [Sistema de archivos](#archivos)
+  1. [Ayuda](#ayuda)
+  1. [Sistema de archivos](#archivos)
     - [Rutas relativas y absolutas](#rutas)
     - [Comandos básicos](#comandos)
     - [Listar directorios](#listado)
     - [Búsqueda](#busqueda)
     - [Permisos](#permisos)
     - [Enlaces simbólicos](#enlaces)
-  4. [Compresión y descompresión de archivos](#compresion)
-  5. [Editando archivos](#editar)
-  6. [Introducción a SSH](#ssh)
-  7. [Olvídate del FTP](#ftp)
-  8. [Recursos](#recursos)
+  1. [Compresión y descompresión de archivos](#compresion)
+  1. [Editando archivos](#editar)
+  1. [Introducción a SSH](#ssh)
+  1. [Olvídate del FTP](#ftp)
+  1. [Recursos](#recursos)
 
 ## <a name="introduccion">Introducción</a>
 
@@ -65,41 +65,41 @@ Olvidémonos de C:, D:, E:, etc :)
 
   Entonces podemos acceder a estas carpetas mediante:
 
-   * #### Ruta absoluta
+  * #### Ruta absoluta
 
-     ```bash
-     # Para acceder a la carpeta images
-     $ cd /home/braulio/images
+    ```bash
+    # Para acceder a la carpeta images
+    $ cd /home/braulio/images
 
-     # Para acceder a la carpeta braulio
-     $ cd /home/braulio
+    # Para acceder a la carpeta braulio
+    $ cd /home/braulio
 
-     # Para acceder a la carpeta home
-     $ cd /home
-     ```
+    # Para acceder a la carpeta home
+    $ cd /home
+    ```
 
-     Donde el <code>/</code> inicial se refiere a la raiz del sistema de archivos.
+    Donde el <code>/</code> inicial se refiere a la raiz del sistema de archivos.
 
    * #### Rutas relativas
 
-     ```bash
-     # Si estuviera en la carpeta /home/braulio, accedo a images con:
-     $ cd images
-     $ cd ~/images
-     $ cd ./images
+    ```bash
+    # Si estuviera en la carpeta /home/braulio, accedo a images con:
+    $ cd images
+    $ cd ~/images
+    $ cd ./images
 
-     # Si estoy en la carpeta /home/braulio/images regreso a la carpeta padre con:
-     $ cd .. # /home/braulio
+    # Si estoy en la carpeta /home/braulio/images regreso a la carpeta padre con:
+    $ cd .. # /home/braulio
 
-     # Y a la carpeta padre del padre con:
-     $ cd ../.. # /home
-     ```
+    # Y a la carpeta padre del padre con:
+    $ cd ../.. # /home
+    ```
 
-     Donde:
+  Donde:
 
-     - El <code>~</code> significa la carpeta del usuario, es decir, /home/braulio.
-     - El <code>.</code> se refiere a la carpeta en sí misma.
-     - El <code>..</code> se refiere a la carpeta padre.
+  - El <code>~</code> significa la carpeta del usuario, es decir, /home/braulio.
+  - El <code>.</code> se refiere a la carpeta en sí misma.
+  - El <code>..</code> se refiere a la carpeta padre.
 
   **[[ Volver al índice ]](#INDEX)**
 
