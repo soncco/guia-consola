@@ -50,9 +50,9 @@ Podemos obtener ayuda sobre un comando de las siguientes maneras:
 
   - ### Desde la web
 
-  [Explain Shell](http://explainshell.com/) Un sitio que permite explicar específicamente la mayoría de comandos.
+  [Explain Shell](http://explainshell.com/), un sitio que permite explicar específicamente la mayoría de comandos.
 
-  **[[ Volver al índice ]](#INDEX)**
+**[[ Volver al índice ]](#INDEX)**
 
 ## <a name="archivos">Sistema de archivos</a>
 
@@ -102,6 +102,8 @@ Olvidémonos de C:, D:, E:, etc :)
     - El <code>.</code> se refiere a la carpeta en sí misma.
     - El <code>..</code> se refiere a la carpeta padre.
 
+  **[[ Volver al índice ]](#INDEX)**
+
   - ### <a name="comandos">Comandos básicos</a>
 
   * #### Creación de archivos y directorios 
@@ -117,7 +119,98 @@ Olvidémonos de C:, D:, E:, etc :)
   $ mkdir media templates
 
   # Creamos directorios dentro de directorios, aunque no existan
-  $ mkdir -p public/{images,css,js # Crea el archivo public y dentro de este la carpeta images, css y js
+  $ mkdir -p public/{images,css,js} # Crea el archivo public y dentro de este la carpeta images, css y js
   
   ```
+
+  * #### Moverse entre directorios
+
+  ```bash
+  # Cambiar a cierto directorio
+  $ cd <directorio>
+
+  # Ir al directorio padre
+  $ cd ..
+
+  # Ir al directorio /home/braulio desde cualquier lugar
+  $ cd ~
+  $ cd
+
+  # Ir al directorio raiz
+  $ cd /
+  ```
+
+  * #### Listar directorios
+
+  ```bash
+  # Muestra carpetas y archivos en el directorio actual
+  $ ls
+
+  # Muestra carpetas y archivos en un directorio
+  $ ls <directorio>
+
+  # Muestra las carpetas y archivos incluyendo los ocultos, y los muestra en forma de columnas.
+  $ ls -la
+
+  # Similar al anterior en Ubuntu
+  $ ll
+  ```
+
+  * #### Copiar, mover, renombrar, borrar
+  ```bash
+  # Copiar directorio
+  $ cp braulio braulito
+  # Ahora tengo dos directorios, uno llamado braulio y otro braulito
+
+  # Copiar archivos
+  $ cp index.html inicio.html
+  # Ahora tengo dos archivos, uno llamado index.html y otro inicio.html
+
+  # Copiar archivos dentro de un directorio a otro
+  $ cp braulio/* otrodirectorio
+
+  # Copiar sólo los archivos html
+  $ cp braulio/*.html otrodirectorio
+
+  # Renombra la carpeta braulito a brau
+  $ mv braulito brau
+
+  # Mueve la carpeta brau al directorio padre
+  $ mv brau ..
+
+  # Mueve la carpeta index que está en la carpeta padre a mi directorio actual
+  $ mv ~/brau .
+
+  # Si no funciona podemos usar el parámetro -f (Force)
+  $ mv -f ~/brau .
+
+  # Borra un archivo
+  $ rm inicio.html
+
+  # Borra los archivos .html
+  $ rm *.html
+
+  # Borra una carpeta
+  $ rm -rf braulio
+  ```
+
+  * #### Para los curiosos
+
+  # Ver mi directorio actual
+  $ pwd
+  
+  # Ver el contenido de un archivo página por página
+  $ less archivo.html
+  # Después de verlo podemos salir presionando q
+
+  # Concatenar el contenido de varios archivos y mostrarlos
+  $ cat archivo.html estilo.css
+
+  # Ver desde donde se ejecuta un comando
+  $ which cat
+  # /bin/cat
+
+  # Ver como funciona cierto comando
+  $ type ls
+  # ls es un alias de 'ls --color=auto' (en Ubuntu)
 
