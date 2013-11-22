@@ -187,7 +187,7 @@ Donde:
   $ curl http://nodejs.org/dist/v0.10.22/node-v0.10.22.tar.gz
   ```
 
- * #### Para los curiosos
+#### Para los curiosos
 
   ```bash
   # Ver el espacio ocupado en la carpeta actual
