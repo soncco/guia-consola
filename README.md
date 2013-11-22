@@ -82,7 +82,7 @@ Olvidémonos de C:, D:, E:, etc :)
 
     Donde el <code>/</code> inicial se refiere a la raiz del sistema de archivos.
 
-    * #### Rutas relativas
+  * #### Rutas relativas
 
     ```
     # Si estuviera en la carpeta /home/braulio, accedo a images con:
