@@ -67,38 +67,38 @@ Olvidémonos de C:, D:, E:, etc :)
 
   Entonces podemos acceder a estas carpetas mediante:
 
-    - #### Ruta absoluta
+  - #### Ruta absoluta
 
-    ```
-    # Para acceder a la carpeta images
-    cd /home/braulio/images
+  ```
+  # Para acceder a la carpeta images
+  cd /home/braulio/images
 
-    # Para acceder a la carpeta braulio
-    cd /home/braulio
+  # Para acceder a la carpeta braulio
+  cd /home/braulio
 
-    # Para acceder a la carpeta home
-    cd /home
-    ```
+  # Para acceder a la carpeta home
+  cd /home
+  ```
 
-    Donde el <code>/</code> inicial se refiere a la raiz del sistema de archivos.
+  Donde el <code>/</code> inicial se refiere a la raiz del sistema de archivos.
 
-    - #### Rutas relativas
+  - #### Rutas relativas
 
-    ```
-    # Si estuviera en la carpeta /home/braulio, accedo a images con:
-    cd images
-    cd ~/images
-    cd ./images
+  ```
+  # Si estuviera en la carpeta /home/braulio, accedo a images con:
+  cd images
+  cd ~/images
+  cd ./images
 
-    # Si estoy en la carpeta /home/braulio/images regreso a la carpeta padre con
-    cd .. # /home/braulio
+  # Si estoy en la carpeta /home/braulio/images regreso a la carpeta padre con
+  cd .. # /home/braulio
 
-    # Y a la carpeta padre del padre con
-    cd ../.. # /home
-    ```
+  # Y a la carpeta padre del padre con
+  cd ../.. # /home
+  ```
 
-    Donde:
-    
-    - El <code>~</code> significa la carpeta del usuario, es decir, /home/braulio.
-    - El <code>.</code> se refiere a la carpeta en sí misma.
-    - El <code>..</code> se refiere a la carpeta padre.
+  Donde:
+  
+  - El <code>~</code> significa la carpeta del usuario, es decir, /home/braulio.
+  - El <code>.</code> se refiere a la carpeta en sí misma.
+  - El <code>..</code> se refiere a la carpeta padre.
