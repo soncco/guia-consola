@@ -15,8 +15,7 @@
     - [Enlaces simbólicos](#enlaces)
   1. [Compresión y descompresión de archivos](#compresion)
   1. [Editando archivos](#edicion)
-  1. [Introducción a SSH](#ssh)
-  1. [Olvídate del FTP](#ftp)
+  1. [Introducción a SSH: Olvídate del FTP](#ssh)
   1. [Recursos](#recursos)
 
 ## <a name="introduccion">Introducción</a>
@@ -444,4 +443,25 @@ El ejemplo más básico lo vemos en los hostings que usan CPanel, donde encontra
 
 Más información en los [Recursos](#recursos).
 
-## Introducción a SSH
+## <a name="ssh">Introducción a SSH: Olvídate del FTP</a>
+
+**[[ Volver al índice ]](#INDEX)**
+
+SSH (Secure Shell) es la manera rápida de acceder a equipos remotos y manejarlos mediante la consola.
+
+### Llaves SSH
+
+  ```bash
+  # Genero una llave SSH
+  $ ssh-keygen -t rsa -C "braulio@soncco.com"
+  ```
+
+  - Primero nos pide un lugar donde estará guardado nuestra llave, generalmente está en el directorio <code>~/.ssh</code>
+  - Luego nos pide una contraseña, ponemos la que nos guste.
+
+
+### Acceso remoto, olvidándonos de FTP
+
+**[[ Volver al índice ]](#INDEX)**
+
+## <a name="recursos">Recursos</a>
