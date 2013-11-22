@@ -304,7 +304,7 @@ Olvidémonos de C:, D:, E:, etc :)
 
   Tomando la primera columna la dividimos en cuatro subcolumnas y las separamos por <code>|</code> para explicarlo mejor, en el caso del archivo README.md
 
-  ```batch
+  ```bash
   -|rw-|rw-|r--
   ```
 
@@ -326,7 +326,7 @@ Olvidémonos de C:, D:, E:, etc :)
 
   Sabiendo esto puedo cambiar los permisos del archivo index.html:
 
-  ```batch
+  ```bash
   # Cambiando los permisos de index.html
   $ chmod 775 index.html
   ```
@@ -338,7 +338,7 @@ Olvidémonos de C:, D:, E:, etc :)
 
   Para los directorios:
 
-  ```batch
+  ```bash
   # Cambiando los permisos de la carpeta braulio
   $ chmod 444 braulio
   # Ahora la carpeta braulio es de sólo lectura.
@@ -349,7 +349,7 @@ Olvidémonos de C:, D:, E:, etc :)
 
   - #### Cambiando de propietario y grupo
 
-  ```batch
+  ```bash
   # index.html pertenecía al usuario brau, ahora pertenecerá al usuario deicy
   $ chown deicy index.html
 
@@ -362,7 +362,7 @@ Olvidémonos de C:, D:, E:, etc :)
 
   - ### Cambiando de usuario
 
-  ```batch
+  ```bash
   # Estoy con el usuario braulio, y quiero usar el usuario deicy
   $ su deicy
 
