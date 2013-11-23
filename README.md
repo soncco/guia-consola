@@ -471,7 +471,17 @@ Pronto
 
 ## <a name="recursos">Recursos</a>
 
-Pronto
+### Comandos
+  - [Linux Command](http://www.linuxcommand.org/) - Aprender la consola
+  - [The Linux Cookbook](http://www.dsl.org/cookbook/cookbook_toc.html) - Tips y técnicas para uso diario
+  - [Linux in a Nutshell](http://my.safaribooksonline.com/0596009305?portal=oreilly) - Directorio de comandos Linux
+  - [Explain Shell](http://explainshell.com/) - Guía detallada de cada comando Linux
+
+### Edición
+  - [Open VIM](http://www.openvim.com/) - Tutorial interactivo para aprender VIM
+
+### Tips
+  - [8 Técnicas al usar la consola](http://www.howtogeek.com/110150/)
 
 **[[ Volver al índice ]](#INDEX)**
 
