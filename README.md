@@ -389,8 +389,8 @@ Los enlaces simbólicos sirven para tener una referencia a un archivo o carpeta 
 El ejemplo más básico lo vemos en los hostings que usan CPanel, donde encontramos la carpeta <code>public_html</code> y el enlace simbólico <code>www</code>, si entramos a ambos, veremos el mismo contenido.
 
   ```bash
-  # Creamos el enlace simbólico <code>www</code> para <code>public_html</code>
-  $ ln -ls ~/public_html www
+  # Creamos el enlace simbólico www para public_html
+  $ ln -ls ~/public_html ~/www
   ```
 
 **[[ Volver al índice ]](#INDEX)**
@@ -459,8 +459,8 @@ SSH (Secure Shell) es la manera rápida de acceder a equipos remotos y manejarlo
   - Primero nos pide un lugar donde estará guardado nuestra llave, generalmente está en el directorio <code>~/.ssh</code>
   - Luego nos pide una contraseña, ponemos la que nos guste.
   - Se han creado dos archivos:
-    - ~/.ssh/id_rsa (La clave privada)
-    - ~/.ssh/id_rsa.pub (La clave pública)
+    - <code>~/.ssh/id_rsa</code> (La clave privada)
+    - <code>~/.ssh/id_rsa.pub</code> (La clave pública)
 
 
 ### Acceso remoto, olvidándonos de FTP
